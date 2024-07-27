@@ -1,7 +1,5 @@
 # tanX_assessment_Harsha
 
-#Please refer master branch for the code
-
 # tanX-infrastructure-task-Harsha
 This was the task given for the infrastructure engineer role:
 # Online Store Revenue Analysis
