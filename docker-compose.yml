@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    volumes:
+      - .:/app
+    command: python app/orders_analysis.py
+
+  test:
+    build:
+      context: .
+      dockerfile: Testing/Dockerfile
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: pytest Testing/test_orders_analysis.py
+
