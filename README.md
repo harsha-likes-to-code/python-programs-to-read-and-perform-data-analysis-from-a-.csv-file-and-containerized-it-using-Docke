@@ -1,4 +1,4 @@
-# tanX_assessment_Harsha (PLEASE REFER MASTER BRANCH FOR CODE)
+# tanX_assessment_Harsha (Please refer master branch for code)
 
 # tanX-infrastructure-task-Harsha
 This was the task given for the infrastructure engineer role:
