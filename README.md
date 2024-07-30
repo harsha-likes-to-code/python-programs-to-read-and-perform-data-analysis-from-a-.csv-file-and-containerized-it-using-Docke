@@ -30,7 +30,33 @@ Your task is to write a Python program that reads the data from the CSV file and
    - One for the main task.
    - One for running the tests.
 
-DOCKERIZING STEPS:
+
+## Structure and Architecture
+
+1. app/
+This directory contains the main application code.
+
+`orders_analysis.py`: The Python script that performs the data analysis tasks.
+
+`requirements.txt`: Lists the Python dependencies required for the application.
+
+`Dockerfile`: Dockerfile to containerize the main application.
+
+`orders.csv`: The CSV file containing the customer orders data.
+
+3. Testing/
+This directory contains the test code.
+
+`test_orders_analysis.py`: The Python script containing the test cases for the application.
+
+`requirements.txt`: Lists the Python dependencies required for running the tests.
+
+`Dockerfile`: Dockerfile to containerize the test environment.
+
+3. docker-compose.yml
+This file defines the services for Docker Compose to manage the application and test environments.
+
+## DOCKERIZING STEPS:
 1. In the app/Dockerfile write the code with appropriate directories to copy the files into a docker file.
 2. Similarly, do the same for the Testing/Dockerfile
 3. Now, write the docker-compose.yml to define and manage multicontainer docker applications
