@@ -1,20 +1,21 @@
 version: '3.8'
 
-services:
+services:  # Services for the application
   app:
-    build:
-      context: .
-      dockerfile: app/Dockerfile
-    volumes:
-      - .:/app
+    build:  # Build settings
+      context: .  # Build context is the current directory
+      dockerfile: app/Dockerfile  # Dockerfile location
+    volumes:  # Volume settings
+      - .:/app  # Mount current directory to /app in container
     command: python app/orders_analysis.py
 
   test:
-    build:
-      context: .
-      dockerfile: Testing/Dockerfile
-    volumes:
-      - .:/app
-    working_dir: /app
-    command: pytest Testing/test_orders_analysis.py
+    build:  # Build settings
+      context: .  # Build context is the current directory
+      dockerfile: Testing/Dockerfile  # Dockerfile location
+    volumes:  # Volume settings
+      - .:/app  # Mount current directory to /app in container
+    working_dir: /app  # Set working directory inside container
+    command: pytest Testing/test_orders_analysis.py  # Run tests with pytest
+
 
